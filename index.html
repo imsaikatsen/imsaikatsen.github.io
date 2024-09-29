@@ -11,17 +11,30 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="bg-gray-800 p-4 text-white flex justify-between">
-    <div class="container mx-auto">
-      <h1 class="text-2xl font-bold">Saikat Sen</h1>
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="text-xl font-bold">
+        <a href="#">Saikat Sen</a>
+      </div>
+      <div class="hidden md:flex space-x-4">
+        <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+        <a href="#skills" class="text-gray-600 hover:text-blue-600">Skills</a>
+        <a href="#projects" class="text-gray-600 hover:text-blue-600">Projects</a>
+        <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button class="text-gray-600 focus:outline-none" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
     </div>
-    <ul class="flex space-x-4">
-      <li><a href="#home" class="hover:text-gray-300">Home</a></li>
-      <li><a href="#about" class="hover:text-gray-300">About</a></li>
-      <li><a href="#skills" class="hover:text-gray-300">Skills</a></li>
-      <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
-      <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
-    </ul>
+    <!-- Mobile Menu -->
+    <div class="hidden md:hidden" id="mobile-menu">
+      <a href="#about" class="block text-gray-600 py-2 px-6 hover:bg-gray-200">About</a>
+      <a href="#skills" class="block text-gray-600 py-2 px-6 hover:bg-gray-200">Skills</a>
+      <a href="#projects" class="block text-gray-600 py-2 px-6 hover:bg-gray-200">Projects</a>
+      <a href="#contact" class="block text-gray-600 py-2 px-6 hover:bg-gray-200">Contact</a>
+    </div>
   </nav>
 
   <!-- Hero Section -->
@@ -221,41 +234,37 @@
     <div class="container mx-auto text-center">
       <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
       <div class="flex justify-center space-x-6 mt-8">
-        <a href="https://www.linkedin.com/in/iamsaikatsen" class="text-blue-500  flex items-center">
-          <i class="fab fa-linkedin text-2xl"></i>
-          <span class="ml-2">LinkedIn</span>
+        <a href="https://www.linkedin.com/in/iamsaikatsen" class="text-gray-700 flex items-center">
+          <i class="fab fa-linkedin text-gray-700 text-2xl"></i>
+          <span class="ml-2 text-gray-700">LinkedIn</span>
         </a>
-        <a href="https://github.com/imsaikatsen" class="text-gray-700  flex items-center">
-          <i class="fab fa-github text-2xl"></i>
-          <span class="ml-2">GitHub</span>
+        <a href="https://github.com/imsaikatsen" class="text-gray-700 flex items-center">
+          <i class="fab fa-github text-gray-700 text-2xl"></i>
+          <span class="ml-2 text-gray-700">GitHub</span>
         </a>
-        <a href="https://x.com/dev_saikat_sen" class="text-blue-400  flex items-center">
-          <i class="fab fa-twitter text-2xl"></i>
-          <span class="ml-2">Twitter</span>
+        <a href="https://x.com/dev_saikat_sen" class="text-gray-700 flex items-center">
+          <i class="fab fa-twitter text-gray-700 text-2xl"></i>
+          <span class="ml-2 text-gray-700">Twitter</span>
         </a>
       </div>
-
+  
       <div class="flex justify-center space-x-6 mt-8">
-        <a href="mailto:sensaikatcse@gmail.com" class="text-blue-500  flex items-center">
+        <a href="mailto:sensaikatcse@gmail.com" class="text-gray-700 flex items-center">
           <i class="fas fa-envelope text-gray-700 text-2xl"></i>
-          <span class="ml-2">sensaikatcse@gmail.com</span>
+          <span class="ml-2 text-gray-700">sensaikatcse@gmail.com</span>
         </a>
-        <a class="text-gray-700  flex items-center">
+        <a class="text-gray-700 flex items-center">
           <i class="fas fa-phone text-gray-700 text-2xl"></i>
-          <span class="ml-2">+8801717529587</span>
+          <span class="ml-2 text-gray-700">+8801717529587</span>
         </a>
-        <a class="text-blue-400  flex items-center">
+        <a class="text-gray-700 flex items-center">
           <i class="fas fa-map-marker-alt text-gray-700 text-2xl"></i>
-          <span class="ml-2">Dhaka, Bangladesh</span>
+          <span class="ml-2 text-gray-700">Dhaka, Bangladesh</span>
         </a>
       </div>
-
     </div>
   </section>
-
-
-
-
+  
   <!-- Footer -->
   <footer class="bg-gray-800 text-white py-4 text-center">
     <p>&copy; 2024 Saikat Sen. All Rights Reserved.</p>
@@ -263,3 +272,14 @@
 </body>
 
 </html>
+
+<script>
+  // Mobile menu toggle
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+</script>
