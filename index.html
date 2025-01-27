@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
   <title>Saikat Sen - Portfolio</title>
 </head>
 
@@ -37,66 +39,85 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header
-    class="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-purple-600 to-indigo-600">
-    <div class="container mx-auto text-center px-6">
-      <!-- Highlighted Title with Gradient Text -->
-      <h1
-        class="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600 mb-6">
-        Hi, I'm Saikat Sen
-      </h1>
+<!-- Hero Section -->
+<header
+  class="relative h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500">
+  <div class="container mx-auto text-center px-6">
+    <!-- Highlighted Title with Gradient Text and Animation -->
+    <h1
+      class="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600 animate-pulse mb-6">
+      Hi, I'm Saikat Sen
+    </h1>
 
-      <!-- Subheading with Clean Text -->
-      <p class="text-xl md:text-2xl text-white font-medium mb-8">
-        Full Stack Developer passionate about building efficient web applications.
-      </p>
+    <!-- Updated Subheading with Focused Value Proposition -->
+    <p class="text-xl md:text-2xl text-white font-medium mb-8">
+      Software Engineer & Full Stack Developer – </br> Building Scalable Web Solutions with React, Node.js & Modern Tools.
+    </p>
 
-      <!-- Call-to-Action Button with Animation -->
+    <!-- Dual Call-to-Action Buttons -->
+    <div class="flex justify-center space-x-4">
       <a href="#projects"
-        class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-yellow-400 hover:text-white transition duration-300 transform hover:scale-105">
+        class="inline-block bg-white text-indigo-600 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-yellow-400 hover:text-white transition duration-300 transform hover:scale-105">
         View My Work
       </a>
+      <a href="#contact"
+        class="inline-block bg-yellow-400 text-indigo-600 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-white hover:text-yellow-400 transition duration-300 transform hover:scale-105">
+        Hire Me
+      </a>
     </div>
-  </header>
+  </div>
+</header>
+
 
 
 
   <!-- About Section -->
-  <section id="about" class="container mx-auto my-8">
-    <h2 class="text-4xl font-bold mb-4 text-center">About Me</h2>
-    <div class="flex flex-wrap justify-center">
-      <div class="w-full p-4">
-        <div class="mx-auto w-32 h-32 rounded-full overflow-hidden mb-4">
-          <img src="images/saikat-profile.jpg" alt="Saikat Sen's Profile Photo" class="object-cover w-full h-full" />
-        </div>
-        <p class="text-lg text-gray-700">
-          Hi, I’m Saikat Sen, a passionate Full Stack Developer with four
-          years of hands-on experience in crafting dynamic web applications. I
-          specialize in Node.js and React, utilizing my skills to build
-          efficient and user-friendly solutions. My journey in technology has
-          been driven by a deep curiosity to solve complex problems and create
-          seamless user experiences.
-        </p> </br>
-        <p class="text-lg text-gray-700">
-          I thrive in collaborative environments and enjoy sharing knowledge
-          with others. Alongside my technical abilities, I have a keen
-          interest in sports, which inspires my approach to teamwork and
-          leadership. I’m continuously learning and adapting to new
-          challenges, ensuring I stay at the forefront of web development
-          trends.
-        </p> </br>
-        <p class="text-lg text-gray-700">
-          Feel free to reach out if you’d like to connect or collaborate on
-          exciting projects!
+  <section id="about" class="bg-gray-100 py-12">
+    <div class="container mx-auto max-w-6xl flex flex-col md:flex-row items-center gap-8 px-6">
+      <!-- Profile Image -->
+      <div class="flex-shrink-0">
+        <img
+          src="images/saikat-profile.jpg"
+          alt="Saikat Sen"
+          class="w-60 h-60 rounded-full shadow-lg border-4 border-gray-200"
+        />
+      </div>
+  
+      <!-- About Text -->
+      <div class="text-center md:text-left">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+        <p class="text-lg text-gray-600 leading-relaxed mb-4">
+          Hi, I’m <span class="font-semibold text-gray-800">Saikat Sen</span>, a
+          passionate <span class="font-semibold">Full Stack Developer</span> with four years of hands-on
+          experience in crafting dynamic web applications. I specialize in
+          <span class="font-semibold">Node.js</span> and <span class="font-semibold">React</span>, utilizing
+          my skills to build efficient and user-friendly solutions.
         </p>
+        <p class="text-lg text-gray-600 leading-relaxed mb-4">
+          My journey in technology is driven by a curiosity to solve complex
+          problems and create seamless user experiences. Beyond coding, I thrive
+          in collaborative environments, sharing knowledge, and adapting to new
+          challenges.
+        </p>
+        <p class="text-lg text-gray-600 leading-relaxed">
+          Outside work, I have a keen interest in <span class="font-semibold">sports</span>, which inspires
+          my approach to teamwork and leadership. I’m constantly learning to
+          stay at the forefront of web development trends.
+        </p>
+  
+        <!-- CTA Button -->
+        <div class="mt-6">
+          <a href="#contact"
+          class="inline-block bg-yellow-400 text-white-600 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-white hover:text-yellow-400 transition duration-300 transform hover:scale-105">
+          Contact With Me
+        </a>
+        </div>
       </div>
     </div>
   </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="bg-gray-100 w-full py-8">
-    <div class="container mx-auto">
+  
+  <section id="skills" class="bg-gray-100 w-full py-8 flex justify-center items-center">
+    <div class="container mx-auto max-w-6xl">
       <h2 class="text-3xl font-bold mb-4 text-center">Skills</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         <div class="bg-white p-4 rounded-md shadow-md flex items-center">
@@ -106,6 +127,10 @@
         <div class="bg-white p-4 rounded-md shadow-md flex items-center">
           <i class="fab fa-react text-3xl text-blue-500 mr-3"></i>
           <span class="text-lg font-semibold">React.js</span>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md flex items-center">
+          <i class="fas fa-react text-3xl text-purple-500 mr-3"></i>
+          <span class="text-lg font-semibold">Next JS</span>
         </div>
         <div class="bg-white p-4 rounded-md shadow-md flex items-center">
           <i class="fab fa-node text-3xl text-blue-500 mr-3"></i>
@@ -119,17 +144,14 @@
           <i class="fab fa-html5 text-3xl text-orange-500 mr-3"></i>
           <span class="text-lg font-semibold">HTML</span>
         </div>
-      
         <div class="bg-white p-4 rounded-md shadow-md flex items-center">
           <i class="fab fa-css3-alt text-3xl text-blue-500 mr-3"></i>
           <span class="text-lg font-semibold">CSS</span>
         </div>
-
         <div class="bg-white p-4 rounded-md shadow-md flex items-center">
           <i class="fas fa-code text-3xl text-blue-500 mr-3"></i>
           <span class="text-lg font-semibold">Tailwind CSS</span>
         </div>
-        
         <div class="bg-white p-4 rounded-md shadow-md flex items-center">
           <i class="fas fa-database text-3xl text-blue-500 mr-3"></i>
           <span class="text-lg font-semibold">SQL</span>
@@ -137,10 +159,6 @@
         <div class="bg-white p-4 rounded-md shadow-md flex items-center">
           <i class="fas fa-database text-3xl text-green-500 mr-3"></i>
           <span class="text-lg font-semibold">MongoDB</span>
-        </div>
-        <div class="bg-white p-4 rounded-md shadow-md flex items-center">
-          <i class="fas fa-database text-3xl text-purple-500 mr-3"></i>
-          <span class="text-lg font-semibold">PostgreSQL</span>
         </div>
         <div class="bg-white p-4 rounded-md shadow-md flex items-center">
           <i class="fab fa-github text-3xl text-gray-700 mr-3"></i>
@@ -153,12 +171,13 @@
       </div>
     </div>
   </section>
-
+  
 
 
 
   <!-- Projects Section -->
-  <section id="projects" class="container mx-auto my-8">
+<section id="projects" class="bg-gray-100 w-full py-8 flex justify-center items-center">
+  <div class="container mx-auto max-w-6xl">
     <h2 class="text-3xl font-bold mb-8 text-center">My Projects</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <div class="bg-white p-6 rounded-md shadow-md">
@@ -168,7 +187,6 @@
           and SQL Server to manage data. Built the frontend with React.js and Material-UI, enhancing productivity and
           decision-making for a million-dollar project.
         </p>
-        <!-- <a href="#" class="text-blue-500 hover:underline">View Details</a> -->
       </div>
 
       <div class="bg-white p-6 rounded-md shadow-md">
@@ -178,7 +196,6 @@
           Implemented categories, roles, and an organogram to effectively manage organizational charts, improving HR
           tracking and management.
         </p>
-        <!-- <a href="#" class="text-blue-500 hover:underline">View Details</a> -->
       </div>
 
       <div class="bg-white p-6 rounded-md shadow-md">
@@ -188,7 +205,6 @@
           with Node.js for file handling, while the React.js frontend enabled users to upload files and download
           processed data, significantly saving time.
         </p>
-        <!-- <a href="#" class="text-blue-500 hover:underline">View Details</a> -->
       </div>
 
       <div class="bg-white p-6 rounded-md shadow-md">
@@ -198,7 +214,6 @@
           data fetching challenges by building robust APIs and an intuitive frontend with React.js for seamless data
           access.
         </p>
-        <!-- <a href="#" class="text-blue-500 hover:underline">View Details</a> -->
       </div>
 
       <div class="bg-white p-6 rounded-md shadow-md">
@@ -207,7 +222,6 @@
           Developed a sales order status module that allows users to filter by buyer, destination, date, and sales order
           code, improving sales order tracking efficiency by 35%.
         </p>
-        <!-- <a href="#" class="text-blue-500 hover:underline">View Details</a> -->
       </div>
 
       <div class="bg-white p-6 rounded-md shadow-md">
@@ -217,7 +231,6 @@
           of the project, including FTP server data retrieval and API development, enabling real-time machine
           performance monitoring.
         </p>
-        <!-- <a href="#" class="text-blue-500 hover:underline">View Details</a> -->
       </div>
 
       <div class="bg-white p-6 rounded-md shadow-md">
@@ -227,50 +240,55 @@
           payment solutions. The system serves over 100,000 users, enhancing customer engagement and simplifying unit
           consumption tracking.
         </p>
-        <!-- <a href="#" class="text-blue-500 hover:underline">View Details</a> -->
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="bg-gray-100 py-8">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
-      <div class="flex justify-center space-x-6 mt-8">
-        <a href="https://www.linkedin.com/in/iamsaikatsen" class="text-gray-700 flex items-center">
-          <i class="fab fa-linkedin text-gray-700 text-2xl"></i>
-          <span class="ml-2 text-gray-700">LinkedIn</span>
-        </a>
-        <a href="https://github.com/imsaikatsen" class="text-gray-700 flex items-center">
-          <i class="fab fa-github text-gray-700 text-2xl"></i>
-          <span class="ml-2 text-gray-700">GitHub</span>
-        </a>
-        <a href="https://x.com/dev_saikat_sen" class="text-gray-700 flex items-center">
-          <i class="fab fa-twitter text-gray-700 text-2xl"></i>
-          <span class="ml-2 text-gray-700">Twitter</span>
-        </a>
-      </div>
-  
-      <div class="flex justify-center space-x-6 mt-8">
-        <a href="mailto:sensaikatcse@gmail.com" class="text-gray-700 flex items-center">
-          <i class="fas fa-envelope text-gray-700 text-2xl"></i>
-          <span class="ml-2 text-gray-700">sensaikatcse@gmail.com</span>
-        </a>
-        <a class="text-gray-700 flex items-center">
-          <i class="fas fa-phone text-gray-700 text-2xl"></i>
-          <span class="ml-2 text-gray-700">+8801717529587</span>
-        </a>
-        <a class="text-gray-700 flex items-center">
-          <i class="fas fa-map-marker-alt text-gray-700 text-2xl"></i>
-          <span class="ml-2 text-gray-700">Dhaka, Bangladesh</span>
-        </a>
-      </div>
+
+ <!-- Contact Section -->
+ <section id="contact" class="bg-gradient-to-r from-indigo-500 to-blue-600 py-20">
+  <div class="container mx-auto text-center px-4">
+    <!-- Section Title -->
+    <h2 class="text-5xl font-extrabold text-white mb-4">Get in Touch</h2>
+    <p class="text-xl text-gray-200 mb-2">Feel free to reach out to me through any of the platforms below! </p>
+    <p class="text-xl text-gray-200 mb-12">Email:- sensaikatcse@gmail.com</p>
+
+    <!-- Divider -->
+    <div class="my-12 border-t border-gray-300 w-3/4 mx-auto"></div>
+
+    <!-- Social Media Links -->
+    <div class="flex flex-wrap justify-center gap-12">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/iamsaikatsen" target="_blank" rel="noopener noreferrer"
+        class="flex items-center space-x-4 bg-white hover:bg-blue-600 text-gray-800 hover:text-white py-4 px-8 rounded-lg shadow-lg transition transform hover:scale-105 duration-300">
+        <i class="fab fa-linkedin text-4xl"></i>
+        <span class="text-xl font-semibold">LinkedIn</span>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/imsaikatsen" target="_blank" rel="noopener noreferrer"
+        class="flex items-center space-x-4 bg-white hover:bg-black text-gray-800 hover:text-white py-4 px-8 rounded-lg shadow-lg transition transform hover:scale-105 duration-300">
+        <i class="fab fa-github text-4xl"></i>
+        <span class="text-xl font-semibold">GitHub</span>
+      </a>
+
+      <!-- Twitter -->
+      <a href="https://x.com/dev_saikat_sen" target="_blank" rel="noopener noreferrer"
+        class="flex items-center space-x-4 bg-white hover:bg-blue-400 text-gray-800 hover:text-white py-4 px-8 rounded-lg shadow-lg transition transform hover:scale-105 duration-300">
+        <i class="fab fa-twitter text-4xl"></i>
+        <span class="text-xl font-semibold">Twitter</span>
+      </a>
     </div>
-  </section>
+  </div>
+</section>
+
+
+
   
   <!-- Footer -->
   <footer class="bg-gray-800 text-white py-4 text-center">
-    <p>&copy; 2024 Saikat Sen. All Rights Reserved.</p>
+    <p>&copy; 2025 Saikat Sen. All Rights Reserved.</p>
   </footer>
 </body>
 
